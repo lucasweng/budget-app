@@ -33,7 +33,7 @@ const requireAuthentication = (WrappedComponent) => {
         <p>Please login to view the info</p>
       )}
     </div>
-  ); 
+  );
 };
 
 const AdminInfo = withAdminWarning(Info);
