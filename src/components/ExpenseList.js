@@ -15,6 +15,7 @@ const ExpenseList = props => (
 );
 
 const mapStateToProps = state => ({
+  // state = store that is being passed from app.js
   expenses: selectExpenses(state.expenses, state.filters)
 });
 
