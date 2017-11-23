@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeExpense } from '../actions/expenses';
 
@@ -13,5 +14,13 @@ const ExpenseListItem = ({ id, description, amount, createdAt, dispatch }) => (
     </button>
   </div>
 );
+
+ExpenseListItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  amount: PropTypes.number.isRequired,
+  createdAt: PropTypes.number.isRequired,
+  dispatch: PropTypes.func.isRequired
+};
 
 export default connect()(ExpenseListItem);

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expenses';
@@ -18,5 +19,9 @@ const mapStateToProps = state => ({
   // state = store that is being passed from app.js
   expenses: selectExpenses(state.expenses, state.filters)
 });
+
+ExpenseList.propTypes = {
+  expenses: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 
 export default connect(mapStateToProps)(ExpenseList);
