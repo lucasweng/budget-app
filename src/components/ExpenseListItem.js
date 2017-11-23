@@ -18,8 +18,8 @@ const ExpenseListItem = ({ id, description, amount, createdAt, dispatch }) => (
 ExpenseListItem.propTypes = {
   id: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  amount: PropTypes.number.isRequired,
-  createdAt: PropTypes.number.isRequired,
+  amount: PropTypes.string.isRequired,
+  createdAt: PropTypes.shape().isRequired,
   dispatch: PropTypes.func.isRequired
 };
 
