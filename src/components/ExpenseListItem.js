@@ -19,7 +19,7 @@ ExpenseListItem.propTypes = {
   id: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
-  createdAt: PropTypes.shape().isRequired,
+  createdAt: PropTypes.number.isRequired,
   dispatch: PropTypes.func.isRequired
 };
 
