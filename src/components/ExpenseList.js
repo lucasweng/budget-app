@@ -8,6 +8,7 @@ const ExpenseList = props => (
   <div>
     <h1>Expense List</h1>
     {
+      // props.expenses is the state passed from mapStateToProps
       props.expenses.map(expense => (
         <ExpenseListItem key={expense.id} {...expense} />
       ))

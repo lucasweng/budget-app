@@ -5,14 +5,18 @@ import { SingleDatePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 
 export default class ExpenseForm extends React.Component {
-  state = {
-    description: '',
-    amount: '',
-    createdAt: moment(),
-    note: '',
-    calendarFocused: false,
-    error: ''
-  };
+  constructor(props) {
+    super(props);
+    // props.expense is passed from EditExpensePage
+    this.state = {
+      description: props.expense ? props.expense.description : '',
+      amount: props.expense ? (props.expense.amount / 100).toString() : '',
+      createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
+      note: props.expense ? props.expense.note : '',
+      calendarFocused: false,
+      error: ''
+    };
+  }
   onDescriptionChange = (e) => {
     const description = e.target.value;
     this.setState(() => ({ description }));
@@ -48,6 +52,7 @@ export default class ExpenseForm extends React.Component {
     } else {
       // Clear the error
       this.setState(() => ({ error: '' }));
+      // Pass newly created expense to AddExpensePage and EditExpensePage
       this.props.onSubmit({
         description: this.state.description,
         amount: parseFloat(this.state.amount, 10) * 100,

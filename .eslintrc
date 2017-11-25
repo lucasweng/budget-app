@@ -10,6 +10,12 @@
   },
   "rules": {
     "comma-dangle": ["error", "never"],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [ "__REDUX_DEVTOOLS_EXTENSION__" ]
+      }
+    ],
     "no-unused-vars": [
       "error",
       {
@@ -18,6 +24,12 @@
       }
     ],
     "react/jsx-filename-extension": 0,
-    "import/first": 0
+    "import/first": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "specialLink": [ "to" ]
+      }
+    ]
   }
 }
