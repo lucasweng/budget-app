@@ -6,10 +6,11 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
   "rules": {
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": [ "error", "never" ],
     "no-underscore-dangle": [
       "error",
       {
