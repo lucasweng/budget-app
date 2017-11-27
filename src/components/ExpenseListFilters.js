@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import momentPropTypes from 'react-moment-proptypes';
 import { connect } from 'react-redux';
 import { DateRangePicker } from 'react-dates';
 import {
@@ -66,7 +67,9 @@ const mapStateToProps = state => ({
 ExpenseListFilters.propTypes = {
   filters: PropTypes.shape({
     text: PropTypes.string.isRequired,
-    sortBy: PropTypes.string.isRequired
+    sortBy: PropTypes.string.isRequired,
+    startDate: momentPropTypes.momentObj,
+    endDate: momentPropTypes.momentObj
   }).isRequired,
   dispatch: PropTypes.func.isRequired
 };
