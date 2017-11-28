@@ -5,12 +5,19 @@
   },
   "env": {
     "browser": true,
-    "node": true,
     "es6": true,
-    "jest": true
+    "jest": true,
+    "node": true
   },
   "rules": {
     "comma-dangle": [ "error", "never" ],
+    "import/first": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "specialLink": [ "to" ]
+      }
+    ],
     "no-underscore-dangle": [
       "error",
       {
@@ -24,15 +31,8 @@
         "args": "none"
       }
     ],
-    "react/jsx-filename-extension": 0,
-    "import/first": 0,
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "specialLink": [ "to" ]
-      }
-    ],
     "one-var": 0,
-    "one-var-declaration-per-line": 0
+    "one-var-declaration-per-line": 0,
+    "react/jsx-filename-extension": 0
   }
 }
