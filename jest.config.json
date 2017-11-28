@@ -8,6 +8,7 @@
   ],
   "testPathIgnorePatterns": [
     "<rootDir>/src/__tests__/fixtures/",
+    "<rootDir>/src/__tests__/__mocks__/",
     "<rootDir>/src/__tests__/setupTests.js"
   ]
 }
