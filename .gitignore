@@ -2,3 +2,5 @@
 node_modules/
 *.log
 *.map
+public/*.js
+public/*.css

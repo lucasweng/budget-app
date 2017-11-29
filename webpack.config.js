@@ -80,6 +80,7 @@ module.exports = (env) => {
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
       contentBase: path.resolve(__dirname, 'public'),
+      // serve up index.html in place of 404 responses
       historyApiFallback: true
     }
   };
