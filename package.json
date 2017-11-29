@@ -11,7 +11,7 @@
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "heroku-postbuild": "echo yarn run build:prod"
   },
   "dependencies": {
     "express": "^4.16.2",
