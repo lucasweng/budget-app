@@ -1,0 +1,30 @@
+.box-layout {
+  align-items: center;
+  background-color: $dark-grey;
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  &__box {
+    background: fade-out(white, .15);
+    border-radius: 3px;
+    padding: $l-size $m-size;
+    text-align: center;
+    width: 35rem;
+  }
+
+  &__title {
+    line-height: 1;
+    margin: 0 0 $m-size 0;
+  }
+
+  &__buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

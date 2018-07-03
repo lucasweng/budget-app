@@ -1,0 +1,47 @@
+.button {
+  background: $light-blue;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  color: white;
+  display: inline-block;
+  font-size: $font-lg;
+  font-weight: 200;
+  line-height: 1;
+  opacity: 1;
+  padding: $s-size;
+  text-decoration: none;
+  transition: opacity 200ms ease
+              box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+
+  &:hover:not(.button--no-bg-sd) {
+    opacity: 0.9;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  }
+
+  &--no-bg-sd {
+    background: none;
+    box-shadow: none;
+  }
+
+  &--secondary {
+    background: #888888;
+  }
+
+  &--danger {
+    background: $bright-red;
+  }
+
+  &__login-box {
+    margin: 1rem auto;
+    width: 25rem;
+  }
+
+  &--go {
+    background: rgb(199, 0, 0);
+  }
+
+  &--fb {
+    background: rgb(43, 75, 161);
+  }
+}

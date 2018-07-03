@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LoadingPage correctly 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <div
+      className="content-container"
+    >
+      <div
+        className="header__content"
+      >
+        <div
+          className="header__title"
+        >
+          <h1>
+            Budget App
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Initializing...
+      </h1>
+    </div>
+  </div>
+  <div
+    className="loader"
+  >
+    <img
+      alt="Loading Animation"
+      className="loader__image"
+      src="/images/loader.gif"
+    />
+  </div>
+</div>
+`;

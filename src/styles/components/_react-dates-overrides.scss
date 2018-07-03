@@ -1,0 +1,34 @@
+.SingleDatePickerInput__withBorder {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.DateRangePickerInput {
+
+  &__withBorder {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  }
+
+  &_calendarIcon {
+    display: none;
+
+    @media (min-width: $desktop-breakpoint) {
+      display: inline-block;
+    }
+  }
+
+  &_arrow_svg {
+    transform: translateX(-10px);
+  }
+
+  &_clearDates {
+    margin-right: 5px;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-right: 10px;
+    }
+  }
+}

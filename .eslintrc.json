@@ -1,0 +1,42 @@
+{
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "arrow-body-style": 1,
+    "comma-dangle": [ "error", "never" ],
+    "import/first": 0,
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "specialLink": [ "to" ]
+      }
+    ],
+    "max-len": 1,
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [ "__REDUX_DEVTOOLS_EXTENSION__", "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__" ]
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local",
+        "args": "none"
+      }
+    ],
+    "one-var": 0,
+    "one-var-declaration-per-line": 0,
+    "react/jsx-filename-extension": 0
+  }
+}
