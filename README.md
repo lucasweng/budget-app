@@ -5,14 +5,6 @@
 
 > A React web app project from the Udemy course - [The Complete React Web Developer Course by Andrew Mead](https://www.udemy.com/react-2nd-edition/)
 
-## Live Demo
-
- To see the app in action, go to [https://demo-budget-app.herokuapp.com/](https://demo-budget-app.herokuapp.com/)
-
- or
-
- To run that demo on your own computer, please follow the instructions in [Getting Started](https://github.com/lucasweng/budget-app#getting-started)
-
 ## Features
 
 * Integration with Firebase:
